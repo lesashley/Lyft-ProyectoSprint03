@@ -43,14 +43,14 @@ inputText[1].onkeypress=letras;
 inputText[3].onkeypress=letras;
 
 var error = document.getElementsByClassName("icon");
-var cantErrores = 0;
+var cantBuenas = 0;
 function validacion(indice,validacion) {
   if (!validacion.test(inputText[indice].value)) {
     error[indice].style.display="inline-block";
     inputText[indice].style.borderColor = "red";
   }
   else{
-    cantErrores++;
+    cantBuenas++;
     error[indice].style.display="none";
     inputText[indice].style.borderColor = "";
   }
@@ -67,4 +67,8 @@ inputText[2].addEventListener("blur", function () {
 })
 inputText[3].addEventListener("blur",function () {
   validacion(3,/([A-Z]{1}[a-zñáéíóú]\D+)$/);
+})
+
+document.getElementsByClassName("button")[0].addEventListener("click",function () {
+
 })
