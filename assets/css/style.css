@@ -1,5 +1,6 @@
 body{
   font-family: 'Montserrat', sans-serif;
+  margin: 0 auto;
 }
 
 header{
@@ -38,15 +39,13 @@ li a{
   border-radius: 10px;
   padding: 5px 10px;
 }
-section{
-  position: absolute;
+#home{
   width: 100%;
-  /*height: 700px;*/
   background-image: url(../images/fondo.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  top: 0;
-  left: 0;
+  height: 800px;
 }
 .up-case{
   text-transform: uppercase;
@@ -57,13 +56,12 @@ section{
   color: #352384;
 }
 #login{
-  box-sizing: border-box;
-  width: 500px;
+  width: 450px;
   background-color: white;
   float: right;
-  margin-top: 120px;
   padding: 20px 50px;
   margin-bottom: 150px;
+  margin-top: 100px;
 }
 #login h1, h2{
   font-size: 2.5rem;
@@ -106,8 +104,37 @@ section{
   margin-right: 20px;
   margin-bottom: 15px;
 }
-h6{
+#login h6{
   margin-bottom: 8px;
   margin-top: 0;
   color: #728089;
+}
+#conteiner{
+  margin-top: -20px;
+  background: -webkit-linear-gradient(#72268d, #301f69);
+  background: -o-linear-gradient(#72268d, #301f69);
+  background: -moz-linear-gradient(#72268d, #301f69);
+  background: linear-gradient(#72268d, #301f69);
+  color: white;
+}
+article.ar-phone{
+  margin :0 auto;
+  width: 1000px;
+  padding: 30px;
+}
+.text-left{
+  display: inline-block;
+  width: 500px;
+  margin-right: 100px;
+}
+.text-left p{
+  margin-bottom: 0;
+  font-size: 0.8rem;
+}
+.text-left div{
+  margin: 50px 0;
+}
+.img-rigth {
+  display: inline-block;
+  width: 300px;
 }
