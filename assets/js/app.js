@@ -46,33 +46,41 @@ var error = document.getElementsByClassName("icon");
 inputText[0].addEventListener("blur", function () {
   if (!/9[0-9]{8}/.test(inputText[0].value)) {
     error[0].style.display="inline-block";
+    inputText[0].style.borderColor = "red";
   }
   else{
     error[0].style.display="none";
+    inputText[0].style.borderColor = "";
   }
 });
 
 inputText[1].addEventListener("blur",function () {
   if (!/([A-Z]{1}[a-zñáéíóú]\D+)$/.test(inputText[1].value)) {
     error[1].style.display="inline-block";
+    inputText[1].style.borderColor = "red";
   }
   else{
     error[1].style.display="none";
+    inputText[1].style.borderColor = "";
   }
 })
 inputText[2].addEventListener("blur", function () {
   if (!/\S+@\S+\.\S+/.test(inputText[2].value)) {
     error[2].style.display="inline-block";
+    inputText[2].style.borderColor = "red";
   }
   else{
     error[2].style.display="none";
+    inputText[2].style.borderColor = "";
   }
 })
 inputText[3].addEventListener("blur",function () {
   if (!/([A-Z]{1}[a-zñáéíóú]\D+)$/.test(inputText[3].value)) {
     error[3].style.display="inline-block";
+    inputText[3].style.borderColor = "red";
   }
   else{
     error[3].style.display="none";
+    inputText[3].style.borderColor = "";
   }
 })
