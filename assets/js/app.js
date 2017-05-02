@@ -69,6 +69,12 @@ inputText[3].addEventListener("blur",function () {
   validacion(3,/([A-Z]{1}[a-zñáéíóú]\D+)$/);
 })
 
-document.getElementsByClassName("button")[0].addEventListener("click",function () {
-
+document.getElementsByClassName("button")[0].addEventListener("click",function (e) {
+  e.preventDefault();
+  if (cantBuenas == 4) {
+    inputText[0].value="";
+    inputText[1].value="";
+    inputText[2].value="";
+    inputText[3].value="";
+  }
 })
