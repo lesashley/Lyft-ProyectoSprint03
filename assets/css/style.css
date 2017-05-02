@@ -72,7 +72,7 @@ li a{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 800px;
+  height: 700px;
 }
 .up-case{
   text-transform: uppercase;
@@ -238,7 +238,7 @@ footer{
 }
 .conteiner-footer{
   width: 980px;
-  text-align: center;
+  text-align: center
 }
 footer div{
   box-sizing: border-box;
@@ -256,10 +256,24 @@ footer div a{
   margin: 10px;
 }
 
+footer a:hover{
+  color: #ff00bf;
+}
+
+footer h3:hover{
+  text-decoration: underline;
+}
 .iconos-footer{
   display: inline-block;
   width: 135px;
 }
+
 .iconos-footer img{
   width: 130px;
+}
+div.font{
+  display: block;
+}
+hr{
+  width: 600px;
 }
