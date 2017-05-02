@@ -147,3 +147,36 @@ article.ar-phone{
   display: inline-block;
   width: 320px;
 }
+
+#video1{
+  background-color: white;
+  color: black;
+  position: relative;
+}
+.text-video1, .text-video3{
+  position: absolute;
+  width: 300px;
+  display: inline-block;
+  padding: 30px 50px;
+}
+
+.mb{
+  margin-bottom: 0;
+}
+.mt{
+  margin-top: 2px;
+}
+.link-video1, .link-video3{
+  float: right;
+  display: inline-block;
+}
+.text-video2{
+  position: absolute;
+  float: right;
+  width: 300px;
+  display: inline-block;
+  padding: 30px 50px;
+}
+.link-video2{
+  display: inline-block;
+}
