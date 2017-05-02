@@ -101,11 +101,8 @@ li a{
   letter-spacing: 1.5px;
 }
 .icon{
-  visibility: hidden;
+  display: none;
   width: 20px;
-}
-.icon-visible{
-  visibility: visible;
 }
 ::placeholder{
   font-family: 'Montserrat', sans-serif;

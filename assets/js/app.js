@@ -42,34 +42,37 @@ inputText[0].onkeypress=numeros;
 inputText[1].onkeypress=letras;
 inputText[3].onkeypress=letras;
 
-var error = document.getElementsByClassName("error");
+var error = document.getElementsByClassName("icon");
 inputText[0].addEventListener("blur", function () {
   if (!/9[0-9]{8}/.test(inputText[0].value)) {
-    error[0].style.visibility="visible";
+    error[0].style.display="inline-block";
   }
   else{
-    error[0].classList.remove("icon-visible");
+    error[0].style.display="none";
   }
 });
 
 inputText[1].addEventListener("blur",function () {
   if (!/([A-Z]{1}[a-zñáéíóú]\D+)$/.test(inputText[1].value)) {
-      console.log("Datos incorrectos");
+    error[1].style.display="inline-block";
   }
   else{
-
+    error[1].style.display="none";
   }
 })
 inputText[2].addEventListener("blur", function () {
   if (!/\S+@\S+\.\S+/.test(inputText[2].value)) {
-    console.log("datos incorrectos");
+    error[2].style.display="inline-block";
   }
   else{
-
+    error[2].style.display="none";
   }
 })
 inputText[3].addEventListener("blur",function () {
   if (!/([A-Z]{1}[a-zñáéíóú]\D+)$/.test(inputText[3].value)) {
-      console.log("Datos incorrectos");
+    error[3].style.display="inline-block";
+  }
+  else{
+    error[3].style.display="none";
   }
 })
