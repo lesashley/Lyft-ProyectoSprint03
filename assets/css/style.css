@@ -343,9 +343,10 @@ footer h3:hover{
 .font{
   color: #fff;
   margin: 0 auto;
-  padding:40px;
+  /*padding:40px;*/
   text-align: center;
-  width: 1200px;
+  /*width: 1200px;*/
+  width: 100%;
 }
 .font a{
   display: inline-block;
