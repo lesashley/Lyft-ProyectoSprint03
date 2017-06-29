@@ -347,7 +347,6 @@ footer h3:hover{
   text-align: center;
   width: 1200px;
 }
-
 .font a{
   display: inline-block;
   font-size:2rem;
@@ -356,16 +355,13 @@ footer h3:hover{
   padding: 15px;
   width: 15px;
 }
-
 div.font img{
   height: 32px;
   width: 32px;
 }
-
 hr{
   width: 600px;
 }
-
 footer p{
   margin-bottom: 0;
   padding-bottom: 30px;
